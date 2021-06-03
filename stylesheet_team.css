@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+}
+
+.team_color {
+  background: #192F37;
+}
+
+h1, 
+h2 {
+  color: #192F37;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3,
+h4 {
+color: white;
+font-family: "Montserrat", sans-serif;
+}
+
+
+.section_wrapper_2{
+  padding-bottom: 3rem;
+}
+
+#team_container{
+  padding-top: 8rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #CDA269;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#menu a{
+  color: white;
+}
+
+#menu a:hover {
+  color: #192F37;
+}
+
+main {
+  display: grid;
+  }
+
+  @media (min-width: 400px) {
+       #team_container {
+      display: grid;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  #team_container .section_wrapper_1 {
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  #team_container .section_wrapper_2 {
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    column-gap: 10px;
+    row-gap: 1rem;
+  }
+
+  h1 {
+    padding-bottom: 3rem;
+  }
+
+
+  }
+
+@media (min-width: 850px) {
+  html {
+    scroll-behavior: smooth;
+    scoll-padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  #team_container {
+      display: grid;
+  }
+
+
+  #team_container .section_wrapper_1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  #team_container .section_wrapper_1 .image1 {
+    grid-column: 2/3;
+    grid-row-start: 1/2;
+    text-align: center;
+    margin: auto;
+}
+
+#team_container .section_wrapper_1 .image2 {
+  grid-column: 3/4;
+  grid-row-start: 1/2;
+  text-align: center;
+  margin: auto;
+}
+
+
+  #team_container .section_wrapper_2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+
+  footer .section_wrapper_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}

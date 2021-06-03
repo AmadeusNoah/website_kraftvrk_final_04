@@ -1,0 +1,141 @@
+
+   .holdOversigtBillede2 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.section_wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.image {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 200px;
+  max-width: 700px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+#hold_beskrivelser_h2 {
+  margin-bottom: 3vw;
+}
+
+.section_wrapper {
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #192F37;;
+  text-align: center;
+  font-weight: bold;
+}
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #192F37;;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.holdoversigt_billede_container {
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+header {
+  z-index: 50;
+}
+
+#farveskift {
+
+  padding-top: 2vw;
+}
+
+@media (min-width: 950px) {
+  .holdOversigtBillede2 {
+    height: auto;
+  }
+  #holdoversigt_container_1 {
+    margin-bottom: 3vw;
+    padding-top: 2rem;
+  }
+
+  #holdoversigt_container_1 h1 {
+    font-size: 6rem;
+    color: #192F37;
+  }
+  #hold_beskrivelser_h2 {
+    margin-bottom: 1vw;
+  }
+  .section_wrapper {
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+  #holdoversigt_container_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 5vw;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .section_wrapper {
+    width: 1200 px;
+    text-align: center;
+    margin-bottom: 0vw;
+  }
+  #hold_beskrivelser_h1 {
+    margin-bottom: 0vw;
+  }
+  .holdoversigt_billede_container {
+    text-align: center;
+    margin-bottom: 4vw;
+  }
+  
+  .image {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 800px;
+    max-width: 900px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CDA269;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+  }
+
+  #menu a{
+    color: white;
+  }
+  
+  #menu a:hover {
+    color: #192F37
+  }
+
+  footer .section_wrapper_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+}
+}

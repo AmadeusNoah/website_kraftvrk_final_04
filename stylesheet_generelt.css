@@ -1,0 +1,276 @@
+/* Generel CSS for KRAFTVRK */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #192F37;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #192F37;
+    font-size: 2.5rem;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #192F37;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+footer {
+    background-color: #192F37;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+footer h3{
+    color: white;
+    
+}
+
+footer .section_wrapper_1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+footer .section_wrapper_2 {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-bottom: 1em;
+}
+
+/* header (Den sorte) */
+
+header {
+    background-color: transparent;
+    position: absolute;
+        top: 0;
+    left: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.some {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 36px;
+    gap: 20px;
+    
+}
+
+.intro_time{
+    background-color: #192F37;
+    width: 100vw;
+    height: 40px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 12px;
+}
+
+
+/* #menu (Den guld) */
+
+#menu {
+    /* position: absolut gør elementets placerering relativt til den nærmeste parent som ikke har position: static (static er default på alle elementer). Her er den relativ ifht "header", da den er position: sticky.  */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #CDA269;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+}
+
+
+#menu.open {
+    transform: translateX(0);
+}
+
+#menu img {
+    place-content:
+}
+
+
+#menu a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: block;
+    text-align: right;
+}
+
+#menu a:hover {
+    color: #192F37
+}
+
+/* #burger_knap (Burgermenuen øvrest i højre side) */
+
+#burger_knap {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+        overflow: hidden;
+    position: relative;
+    right: 20px;
+}
+
+.streg {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    top: calc(50% - 1.5px);
+    left: 0;;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.streg.top {
+    transform: translateY(-10px);
+}
+
+.streg.bottom {
+    transform: translateY(10px);
+}
+
+
+/* #burger_knap (Den blå) Når den er åben / .open */
+
+#burger_knap.open .streg.top {
+    transform: translateY(0) rotate(45deg);
+}
+
+#burger_knap.open .streg.center {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+#burger_knap.open .streg.bottom {
+    transform: translateY(0) rotate(-45deg);
+}
+
+
+
+@media(min-width: 850px) {
+
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+        }
+
+        #burger_knap {
+            display: none;
+        }
+        
+        header nav ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            flex-flow: row;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+            gap: 2rem;
+            padding-left: 0rem;
+        }
+
+        #menu {
+            /* position: absolut gør elementets placerering relativt til den nærmeste parent som ikke har position: static (static er default på alle elementer). Her er den relativ ifht "header", da den er position: sticky.  */
+            position: relative;
+            display: flex;
+            height: 40px;
+            top: 0px;
+            background-color: transparent;
+            width: auto;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 1rem;
+            transition: none;
+            transform: translateX(0%);
+        }
+
+        #menu a {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+            display: block;
+        }
+        #menu a:hover {
+            color: #CDA269;
+        }
+
+    }
+
+

@@ -1,0 +1,349 @@
+/*--------- generelt ---------*/
+
+main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  color: #192F37;
+  padding: 0px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #CDA269;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#menu a{
+  color: white;
+}
+
+#menu a:hover {
+  color: #192F37
+}
+
+.priser_og_forloeb_knap {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  background-color: #192F37;
+  width: 160px;
+  padding: 0.5rem;
+  margin: 0;
+  text-co
+  cursor: pointer;
+  align-content: center;
+}
+
+.icons_credit p {
+  color: #192F37;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+}
+
+/* hover- og focuseffekt */
+
+.img_container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #192F37;
+  
+  padding: 16px 20px;
+}
+
+
+
+/*--------- generelt stop --------*/
+
+/*--------- mediaquerys ---------*/
+/* Desktop */
+
+@media (min-width: 1000px) {
+.section_wrapper_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+    align-items: center;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+  .titel_1 {
+    text-align: center;
+    margin: auto;
+    padding-top: 3rem;
+  }
+
+  .col_1 {
+    text-align: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .section_wrapper_1 .col_1 {
+    max-width: 800px;
+  }
+
+  .section_wrapper_1 .col_2 {
+    max-width: 800px;
+  }
+
+
+  .section_wrapper_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .section_wrapper_2 img {
+    justify-content: space-evenly;
+    width: 100px;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  #personlig_traening_2 {
+    background-color: #F0E2D1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  #personlig_traening_2 h2 {
+    text-align: center;
+  }
+
+  .div_1 {
+    text-align: center;
+  }
+
+  .section_wrapper_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .section_wrapper_3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .section_wrapper_3 img {
+    object-fit: cover;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  #personlig_traening_3 {
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .img_container:hover .image {
+    background-color: blanchedalmond;
+    opacity: 0.3;
+  }
+
+  .img_container:hover .middle {
+    opacity: 1;
+  }
+
+  #personlig_traening_container_1 h1 {
+    padding-top: 6rem;
+}
+
+#personlig_traening_container_1 .col_1 {
+
+  text-align: center;
+}
+
+#personlig_traening_container_1 .col_2 img {
+}
+
+.icons_credit p {
+  color: #192F37;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+footer .section_wrapper_1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.priser_og_forloeb_knap {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  background-color: #192F37;
+  color: white;
+  width: 200px;
+  padding: 0.5rem;
+  margin: 0;
+  text-co
+  cursor: pointer;
+  align-content: center;
+}
+
+
+  
+}
+
+/* Mobile */
+@media (max-width: 999px) {
+
+  .titel_1 {
+    padding-bottom: 3rem;
+  }
+
+
+  .section_wrapper_1 {
+    padding: 1rem;
+  }
+
+  #personlig_traening_container_1 h1 {
+    padding-top: 8rem;
+    font-size: 4rem;
+}
+
+#personlig_traening_container_1 {
+padding-bottom: 3rem;
+}
+
+  .titel_1 {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .col_2 {
+    padding-top: 20px;
+  }
+
+  .section_wrapper_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-content: left;
+  }
+  .section_wrapper_2 img {
+    width: 100px;
+    height: auto;
+    padding-bottom: 1rem;
+    align-content: center;
+  }
+
+  #personlig_traening_2 {
+    background-color: #F0E2D1;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .div_1 {
+    text-align: center;
+  }
+
+  .pil {
+    text-align: center;
+    margin-left: -1rem;
+    rotate: 90deg;
+  }
+
+  #personlig_traening_3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+  }
+
+  .section_wrapper_3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    cursor: pointer;
+  }
+
+  .priser_og_forloeb_knap {
+    display: inline-block;
+    border-style: none;
+    background-color: ;
+    width: 200px;
+    padding: 0.5rem;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+  }
+
+  .knap {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .img_container:focus .image {
+    background-color: #F0E2D1;
+    opacity: 0.3;
+  }
+
+  .img_container:focus .middle {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 2000px) {
+.section_wrapper_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
+
